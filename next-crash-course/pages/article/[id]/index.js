@@ -29,6 +29,8 @@ export const getStaticProps = async (context) => {
   };
 };
 
+// this allows for faster speed because we are fetching requests at Build time
+
 export const getStaticPaths = async () => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
 
